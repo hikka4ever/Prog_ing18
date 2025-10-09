@@ -9,4 +9,3 @@ def IsPalindrome(text: str):
     clean_text = re.sub(r'[^0-9а-яa-z]', '', text.lower())
 
     return clean_text == clean_text[::-1]
-

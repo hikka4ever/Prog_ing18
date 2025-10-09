@@ -5,7 +5,7 @@ from figures.triangle import Triangle
 
 
 def main():
-    """ Пример использования классов фигур. """
+    """Пример использования классов фигур."""
     try:
         # Создаем экземпляры фигур
         square = Square(7)
@@ -28,8 +28,14 @@ def main():
 
         # Сравниваем фигуры
         print("\n--- Сравнение фигур ---")
-        print(f"Площадь квадрата > площади прямоугольника? {square.is_area_larger_than(rectangle)}")
-        print(f"Периметр круга > периметра квадрата? {circle.is_perimeter_larger_than(square)}")
+        print(
+            f"Площадь квадрата > площади прямоугольника? "
+            f"{square.is_area_larger_than(rectangle)}"
+        )
+        print(
+            f"Периметр круга > периметра квадрата? "
+            f"{circle.is_perimeter_larger_than(square)}"
+        )
 
     except ValueError as e:
         print(f"Ошибка: {e}")

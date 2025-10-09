@@ -1,5 +1,5 @@
-import math
 from abc import ABC, abstractmethod
+
 
 class Figure(ABC):
     """
@@ -8,11 +8,15 @@ class Figure(ABC):
     и для их сравнения.
     """
 
+    @abstractmethod
     def get_area(self):
-        """ Вычисляет и возвращает площадь. """
+        """Вычисляет и возвращает площадь."""
+        pass
 
+    @abstractmethod
     def get_perimeter(self):
-        """ Вычисляет и возвращает периметр. """
+        """Вычисляет и возвращает периметр."""
+        pass
 
     def is_area_larger_than(self, other_shape: 'Figure'):
         """

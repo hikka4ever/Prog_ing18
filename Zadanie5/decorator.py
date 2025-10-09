@@ -1,5 +1,6 @@
 import time
 
+
 def timing_decorator(func):
     """
     Декоратор, измеряющий время выполнения функции.
@@ -8,6 +9,9 @@ def timing_decorator(func):
         start_time = time.time()
         result = func(*args, **kwargs)
         end_time = time.time()
-        print(f"Функция '{func.__name__}' выполнилась за {end_time - start_time} секунд.")
+        print(
+            f"Функция '{func.__name__}' выполнилась за "
+            f"{end_time - start_time} секунд."
+        )
         return result
     return wrapper

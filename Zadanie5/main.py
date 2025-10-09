@@ -2,7 +2,6 @@ from function_cons import sum_numbers
 from function_file import sum_from_file
 
 
-
 def main():
     """
     Главная функция, которая запускает все остальные.
